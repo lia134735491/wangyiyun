@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+      width: 300px;
+      height: 300px;
+      background: red;
+      padding: 10px;
+    }
+    input {
+      width: 50%;
+      box-sizing: border-box;
+      height: 30px;
+      display: block;
+    }
+</style>
+<body>
+    <div>
+      
+    </div>
+</body>
+<script>
+// 冒泡排序
+var array = [5,4,3,2,1]
+var temp = 0
+for(var i = 0;i<array.length; i++){
+	for(var j = 0; j<array.length-i; j++){
+		if(array[i]>array[j+1]){
+			temp = array[j +1]
+			array[j+1]=array[j]
+			array[j]=temp
+		}
+	}
+}
+
+
+
+    console.log(array);
+</script>
+</html>

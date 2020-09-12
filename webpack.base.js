@@ -1,5 +1,5 @@
 let path = require('path');
-let miniCssExtractPlugin = require('mini-css-extract-plugin');
+// let miniCssExtractPlugin = require('mini-css-extract-plugin');
 let htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry:'./src/index.js',
@@ -14,17 +14,18 @@ module.exports = {
     },
     module: {
         rules:[
-            {
-                test: /\.css$/,
-                use: [
-                    miniCssExtractPlugin.loader,
-                    'css-loader']
-            },
+            // {
+            //     test: /\.css$/,
+            //     use: [
+            //         miniCssExtractPlugin.loader,
+            //         'css-loader']
+            // },
             //下载sass-loader,node-sass
             {
                 test: /\.scss/,
                 use: [
-                    miniCssExtractPlugin.loader,
+                    // miniCssExtractPlugin.loader,
+                    'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -69,11 +70,11 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            template:'./src/index.html',
+            template:'index.html',
             filename: 'index.html'
         }),
-        new miniCssExtractPlugin({
-            filename:'[name].css',//分离后的文件名
-        })
+        // new miniCssExtractPlugin({
+        //     filename:'[name].css',//分离后的文件名
+        // })
     ]
 }
