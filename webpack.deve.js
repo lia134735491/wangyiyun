@@ -18,10 +18,14 @@ module.exports = merge(base,{
                 use:['style-loader','css-loader']
             },
             {
-                test:/\.vue/,
+                test:/\.vue$/,
                 use:{
                     loader: 'vue-loader'
                 }
+            },
+            {
+                test:/\.html$/,
+                use:['html-loader']
             }
         ]
     },

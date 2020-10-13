@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <div>
+    <div class="navigation">
       <div class="top-navigation">
         <h1 class="logo">
           <a href="#">网易云音乐</a>
@@ -153,8 +153,10 @@ export default {
 <style lang='scss' scoped>
 .content {
   font-size: 0;
-  background: #242424;
-  .top-navigation {
+  background: #f5f5f5;
+  .navigation {
+    background: #242424;
+    .top-navigation {
     width: 1100px;
     height: 70px;
     margin: auto;
@@ -268,6 +270,7 @@ export default {
         outline: none;
       }
     }
+  }
   }
   .loginPage {
     border-radius: 4px;
