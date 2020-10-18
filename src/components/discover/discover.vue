@@ -41,48 +41,20 @@
   </div>
 </template>
 <script>
-import { swiper, swiperSlide } from 'vue-awesome-swiper';
+
 
 export default {
   // name: 'carrousel',
-  components:{
-      swiper,
-      swiperSlide
-  },
+  
   data () {
     return {
-      swiperOptions: {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          // type: 'bullets'
-        },
-//         direction: 'vertical',
-// 　　    observer:true,//修改swiper自己或子元素时，自动初始化swiper 
-// 　　    observeParents:true,//修改swiper的父元素时，自动初始化swiper 
-        spaceBetween: 30,
-        noSwiping : true,
-        effect: 'fade',
-        fadeEffect:{
-          crossFade: true,
-        },
-        autoplay: true,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        swiperSlides:[]
-      }
+      
     };
   },
-
   components: {},
 
   computed: {
-    swiper () {
-      return this.$refs.mySwiper.$swiper
-    }
+    
   },
 
   mounted () {
@@ -92,12 +64,7 @@ export default {
   },
 
   methods: {
-    prev() {
-      this.swiper.slidePrev();
-    },
-    next() {
-      this.swiper.slideNext()
-    }
+    
   }
 }
 

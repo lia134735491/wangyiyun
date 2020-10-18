@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div>
-      <swiper ref="mySwiper" :options="swiperOptions">
+    <swiper ref="mySwiper" :options="swiperOptions">
       <swiper-slide>
         <div class="my-swiper-slide">
           <div class="img-content">
@@ -54,9 +54,30 @@
               <a href="javascript:;">热门推荐</a>
             </div>
             <ul class="select">
-              <li></li>
+              <li>
+                <a>华语</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a>流行</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a>摇滚</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a>民谣</a>
+                <span>|</span>
+              </li>
+              <li>
+                <a>电子</a>
+              </li>
             </ul>
-            <div class="tuijian-right"></div>
+            <span class="tuijian-more">
+              <a>更多</a>
+              <span></span>
+            </span>
           </div>
         </div>
       </div>
@@ -66,15 +87,50 @@
 </template>
 
 <script>
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 export default {
+  components:{
+      swiper,
+      swiperSlide
+  },
   data () {
     return {
+      swiperOptions: {
+        pagination: {
+          el: '.swiper-pagination',
+          autoplay: true,
+          clickable: true,
+          // type: 'bullets'
+        },
+        // centeredSlides: true,
+        // loopAdditionalSlides: 100,
+//         direction: 'vertical',
+// 　　    observer:true,//修改swiper自己或子元素时，自动初始化swiper 
+// 　　    observeParents:true,//修改swiper的父元素时，自动初始化swiper 
+        spaceBetween: 30,
+        noSwiping : true,
+        effect: 'fade',
+        fadeEffect:{
+          crossFade: true,
+        },
+        autoplay: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        swiperSlides:[]
+      }
     };
   },
 
   components: {},
 
-  computed: {},
+  computed: {
+    swiper () {
+      return this.$refs.mySwiper.$swiper
+    }
+  },
 
   mounted () {
     var downloadapp = document.getElementsByClassName('downloadapp')[0];
@@ -94,13 +150,23 @@ export default {
     })
   },
 
-  methods: {}
+  methods: {
+    prev() {
+      this.swiper.slidePrev();
+    },
+    next() {
+      this.swiper.slideNext()
+    }
+  }
 }
 
 </script>
 <style lang='scss' scoped>
 .swiper-container {
+  width: 100%;
   position: relative;
+  // border: 1px solid red;
+  // width: 100% !important;
   .my-swiper-slide {
     background: url('../../images/1099511653100223741.jpg'); 
     width: 100%;
@@ -115,6 +181,7 @@ export default {
       }  
     }
   }
+  
 }
 .downloadapp {
   position: absolute;
@@ -165,6 +232,34 @@ export default {
           &:hover {
             text-decoration: none;
           }
+        }
+      }
+      .select {
+        display: inline-block;
+        margin: 7px 0 0 20px;
+        font-size: 12px;
+        li {
+          display: inline-block;
+          a {
+            color: #666;
+          }
+          span {
+            margin: 0 10px;
+          }
+        }
+      }
+      .tuijian-more {
+        float: right;
+        margin-top: 9px;
+        a {
+          font-size: 12px;
+        }
+        span {
+          width: 12px;
+          height: 12px;
+          margin-left: 4px;
+          display: inline-block;
+          background: url('../../images/index.png') 0 -240px;
         }
       }
     }
