@@ -643,6 +643,52 @@ export default {
 
 </script>
 <style lang='scss' scoped>
+.swiper-container {
+  width: 100%;
+  position: relative;
+  // border: 1px solid red;
+  // width: 100% !important;
+  .my-swiper-slide {
+    background: url('../../images/1099511653100223741.jpg'); 
+    width: 100%;
+    .img-content {
+      margin: 0 auto;
+      width: 982px;
+      height: 285px;
+      padding-right: 254px;
+      img {
+        width: 730px;
+        height: 100%;
+      }  
+    }
+  }
+  
+}
+.downloadapp {
+  position: absolute;
+  width: 254px;
+  height: 285px;
+  background: url('../../images/download.png');
+  top: 105px;
+  z-index: 100;
+  a {
+    display: inline-block;
+    width: 215px;
+    height: 56px;
+    margin: 186px 0 0 19px;
+    text-indent: -999999px;
+    background: url('../../images/download.png') -19px -186px;
+    &:hover {
+      background-position: 0 -290px;
+    }
+  }
+  p {
+    margin: 10px auto;
+    color: #8d8d8d;
+    font-size: 12px;
+    text-align: center;
+  }
+}
 .component-content {
   display: flex;
   width: 982px;
