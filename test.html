@@ -6,34 +6,31 @@
     <title>Document</title>
 </head>
 <style type='text/css'>
-.aa {
-    width: 100px;
-    height: 100px;
-    border: 3px solid red;
-}
-.bb {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: yellow;
-}
-img {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 1px solid red;
-}
-p {
-    /* position: absolute; */
-    font-size: 15px;
-}
+ .a {
+     width: 100px;
+     height: 100px;
+     border: 1px solid red;
+ }
+ .b,.c {
+     float: left;
+ }
+ .b {
+     width: 60px;
+     height: 100%;
+     background: yellow;
+ }
+ .c {
+     width: 50px;
+     height: 100%;
+     background: red;
+ }
 </style>
 
 <body>
-  <img></img>  
-  <p>11111</p>
-  <p>22222</p>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
   <script>
       var aa = class bb {
 

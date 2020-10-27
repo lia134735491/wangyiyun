@@ -5,6 +5,8 @@ import discoverchild from '../components/discoverchild/discoverchild.vue';
 import mymusic from '../components/mymusic/mymusic.vue';
 import friend from '../components/friend/friend.vue';
 import downloadapp from '../components/downloadapp/downloadapp.vue';
+import tuijian from '../components/tuijian/tuijian.vue';
+
 import error404 from '../components/error404/error404.vue';
 let router = new VueRouter({
     routes:[
@@ -19,7 +21,7 @@ let router = new VueRouter({
                 },
                 {
                     path:'discover/playlist',
-                    component: discoverchild
+                    component: tuijian
                 },
                 {
                     path: 'discover/toplist',

@@ -51,11 +51,11 @@
         <div>
           <div class="tuijian">
             <div class="tuijian-left">
-              <a href="javascript:;">热门推荐</a>
+              <a href="#/discover/playlist/" @click="yinyueselect">热门推荐</a>
             </div>
             <ul class="select">
               <li>
-                <a>华语</a>
+                <a href="">华语</a>
                 <span>|</span>
               </li>
               <li>
@@ -75,7 +75,7 @@
               </li>
             </ul>
             <span class="tuijian-more">
-              <a>更多</a>
+              <a href="/discover/playlist/">更多</a>
               <span></span>
             </span>
           </div>
@@ -215,17 +215,351 @@
                     <a>Linkin Park</a>
                   </p>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                  <div>
+                    <img src="http://p3.music.126.net/q6h3zFrzr6Y3NlQT8rir6w==/109951165373635125.jpg?param=100y100">
+                    <a class="backi"></a>
+                  </div>
+                  <p>
+                    <a>Hybrid Theory (20th Anniversary Edition)</a>
+                  </p>
+                  <p>
+                    <a>Linkin Park</a>
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <img src="http://p3.music.126.net/q6h3zFrzr6Y3NlQT8rir6w==/109951165373635125.jpg?param=100y100">
+                    <a class="backi"></a>
+                  </div>
+                  <p>
+                    <a>Hybrid Theory (20th Anniversary Edition)</a>
+                  </p>
+                  <p>
+                    <a>Linkin Park</a>
+                  </p>
+                </li>
+                <li>
+                  <div>
+                    <img src="http://p3.music.126.net/q6h3zFrzr6Y3NlQT8rir6w==/109951165373635125.jpg?param=100y100">
+                    <a class="backi"></a>
+                  </div>
+                  <p>
+                    <a>Hybrid Theory (20th Anniversary Edition)</a>
+                  </p>
+                  <p>
+                    <a>Linkin Park</a>
+                  </p>
+                </li>
 
+                <li>
+                  <div>
+                    <img src="http://p3.music.126.net/q6h3zFrzr6Y3NlQT8rir6w==/109951165373635125.jpg?param=100y100">
+                    <a class="backi"></a>
+                  </div>
+                  <p>
+                    <a>Hybrid Theory (20th Anniversary Edition)</a>
+                  </p>
+                  <p>
+                    <a>Linkin Park</a>
+                  </p>
+                </li>
               </ul>
             </div>
             <a class="right-sanjiao">&nbsp;</a>
           </div>
+          <div class="tuijian">
+            <div class="tuijian-left">
+              <a href="javascript:;">新碟上架</a>
+            </div>
+            <span class="tuijian-more">
+              <a>更多</a>
+              <span></span>
+            </span>
+          </div>
+          <div class=bangdan-content>
+            <dl>
+              <dt>
+                <div class="img">
+                  <img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100">
+                </div>
+                <div class="yunyinyue">
+                  <a>云音乐飙升榜</a>
+                  <div>
+                    <a>播放</a>
+                    <a>收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd>
+                <ol>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <div class="img">
+                  <img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100">
+                </div>
+                <div class="yunyinyue">
+                  <a>云音乐飙升榜</a>
+                  <div>
+                    <a>播放</a>
+                    <a>收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd>
+                <ol>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <div class="img">
+                  <img src="http://p4.music.126.net/DrRIg6CrgDfVLEph9SNh7w==/18696095720518497.jpg?param=100y100">
+                </div>
+                <div class="yunyinyue">
+                  <a>云音乐飙升榜</a>
+                  <div>
+                    <a>播放</a>
+                    <a>收藏</a>
+                  </div>
+                </div>
+              </dt>
+              <dd>
+                <ol>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+
+                  <li>
+                    <span>1</span>
+                    <a>2222</a>
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+          </div>
         </div>
       </div>
-      <div class="content-right"></div>
+      <div class="content-right">
+        <div class="uselogin">
+          <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+          <a>用户登录</a>
+        </div>
+        <div class="geshou">
+          <div class="geshou-content">
+            <div class="top">
+              <span>入驻歌手</span>
+              <a>查看全部 ></a>
+            </div>
+            <div class="geshou-list">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    <div>
+                      <p>张惠妹aMEI</p>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    <div>
+                      <p>张惠妹aMEI</p>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    <div>
+                      <p>张惠妹aMEI</p>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    <div>
+                      <p>张惠妹aMEI</p>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/p9U80ex1B1ciPFa125xV5A==/5931865232210340.jpg?param=62y62" alt="">
+                    <div>
+                      <p>张惠妹aMEI</p>
+                      <p>台湾歌手张惠妹</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="shenqing">
+              <a href="">申请成为网易音乐人</a>
+            </div>
+            <div class="top1">
+              <span>热门主播</span>
+            </div>
+            <div class="remenzhubo">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                  </a>
+                  <div>
+                    <a href="">陈立</a>
+                    <p>心理学家、美食家陈立教授</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="http://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40" alt="">
+                  </a>
+                  <div>
+                    <a href="">陈立</a>
+                    <p>心理学家、美食家陈立教授</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -295,6 +629,9 @@ export default {
   },
 
   methods: {
+    yinyueselect () {
+      this.router.push('/discover/playlist/')
+    },
     prev() {
       this.swiper.slidePrev();
     },
@@ -306,53 +643,8 @@ export default {
 
 </script>
 <style lang='scss' scoped>
-.swiper-container {
-  width: 100%;
-  position: relative;
-  // border: 1px solid red;
-  // width: 100% !important;
-  .my-swiper-slide {
-    background: url('../../images/1099511653100223741.jpg'); 
-    width: 100%;
-    .img-content {
-      margin: 0 auto;
-      width: 982px;
-      height: 285px;
-      padding-right: 254px;
-      img {
-        width: 730px;
-        height: 100%;
-      }  
-    }
-  }
-  
-}
-.downloadapp {
-  position: absolute;
-  width: 254px;
-  height: 285px;
-  background: url('../../images/download.png');
-  top: 105px;
-  z-index: 100;
-  a {
-    display: inline-block;
-    width: 215px;
-    height: 56px;
-    margin: 186px 0 0 19px;
-    text-indent: -999999px;
-    background: url('../../images/download.png') -19px -186px;
-    &:hover {
-      background-position: 0 -290px;
-    }
-  }
-  p {
-    margin: 10px auto;
-    color: #8d8d8d;
-    font-size: 12px;
-    text-align: center;
-  }
-}
 .component-content {
+  display: flex;
   width: 982px;
   margin: 0 auto;
   border: 1px solid #d3d3d3;
@@ -540,10 +832,227 @@ export default {
         }
       }
     }
+    .bangdan-content {
+      margin-top: 20px;
+      height: 472px;
+      width: 690px;
+      background: url('../../images/index_bill.png');
+      dl {
+        display: inline-block;
+        width: 230px;
+        dt {
+          box-sizing: content-box;
+          padding: 20px 0 0 19px;
+          height: 100px;
+          div {
+            display: inline-block;
+            vertical-align: top;
+            
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .yunyinyue {
+            width: 116px;
+            margin: 6px 0 0 10px;
+            // border: 1px solid red;
+            >a {
+              color: #333;
+              font-size: 12px;
+            }
+            div {
+              margin-top: 10px;
+              font-size: 12px;
+              a {
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                margin-right: 10px;
+                text-indent: -9999px;
+                &:first-child {
+                  background: url('../../images/index.png') -266px -206px;
+                }
+                &:last-child {
+                  background: url('../../images/index.png') -300px -206px;
+                }
+              }
+            }
+          }
+        }
+        dd {
+          width: 230px;
+          ol {
+            margin-left: 15px;
+            li {
+              display: block;
+              font-size: 12px;
+              height: 32px;
+             
+              line-height: 32px;
+              span {
+                text-align: center;
+                display: inline-block;
+                width: 35px;
+                // margin-left: -35px;
+                height: 32px;
+              }
+              a {
+                display: inline-block;
+                height: 32px;
+                width: 170px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .content-right {
-    display: inline-block;
+    border-left: 1px solid #d3d3d3;
+    
+    float: right;
     width: 250px;
+    .uselogin {
+      width: 100%;
+      height: 126px;
+      background: url('../../images/index.png');
+      font-size: 12px;
+      p {
+        color: #666;
+        
+        margin: 0 auto;
+        padding: 16px 0;
+        width: 205px;
+        line-height: 22px;
+      }
+      a {
+        margin: 0 auto;
+        background: url('../../images/index.png') 0 -196px;
+        display: block;
+        width: 100px;
+        height: 31px;
+        line-height: 31px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 1px 0 #8a060b;
+      }
+    }
+    .geshou {
+      margin-top: 15px;
+      padding: 0 20px;
+      .geshou-content {
+        .top {
+          height: 23px;
+          border-bottom: 1px solid #ccc;
+          color: #333;
+          font-size: 12px;
+          a {
+            float: right;
+          }
+        }
+        .geshou-list {
+          margin-top: 6px;
+          li {
+            margin-top: 14px;
+            width: 210px;
+            height: 62px;
+            background: #fafafa;
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              img {
+                width: 62px;
+                height: 62px;
+                vertical-align: top;
+              }
+              >div {
+                display: inline-block;
+                width: 148px;
+                height: 100%;
+                padding-left: 14px;
+                border: 1px solid #e9e9e9;
+                &:hover {
+
+                }
+                p{
+                  margin-top: 12px;
+                  width: 90%;
+                  font-size: 14px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  &:first-child {
+                    font-weight: bold;
+                    color: #333;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                  &:last-child {
+                    color: #666;
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .shenqing {
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 31px;
+            line-height: 31px;
+            text-align: center;
+            margin: 14px 0 0 0px;
+            border-radius: 4px;
+            color: #333;
+            font-weight: bold;
+            background: url('../../images/button2.png') no-repeat;
+            background-position: 0 -306px;
+            font-size: 14px;
+          }
+        }
+        .top1 {
+          margin-top: 15px;
+          height: 23px;
+          border-bottom: 1px solid #ccc;
+          color: #333;
+          font-size: 12px;
+          a {
+            float: right;
+          }
+        }
+        .remenzhubo {
+          margin-top: 20px;
+          ul {
+            li {
+              height: 50px;
+              >a {
+                // display: block;
+                vertical-align: top;
+                font-size: 12px;
+                color: #333;
+                box-shadow: 0 0 1px #333333 inset;
+                margin-right: 10px;
+                img {
+                  
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+              div {
+                display: inline-block;
+                font-size: 12px;
+                color: #333;
+                width: 159px;
+                line-height: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>
