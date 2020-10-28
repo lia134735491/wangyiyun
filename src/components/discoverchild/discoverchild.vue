@@ -630,7 +630,7 @@ export default {
 
   methods: {
     yinyueselect () {
-      this.router.push('/discover/playlist/')
+      this.$router.push('/discover/playlist/')
     },
     prev() {
       this.swiper.slidePrev();

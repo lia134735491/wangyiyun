@@ -134,6 +134,8 @@
 </template>
 
 <script>
+var $ = require('jquery')
+
 export default {
   data () {
     return {
@@ -143,6 +145,12 @@ export default {
   components: {},
 
   computed: {},
+
+  created () {
+    this.axios.get('http://localhost:7300/mock/5f8bbcb340cf330dec977db7/wangyiyun/singlesong').then(function (response) {
+      console.log(111)
+    })
+  },
 
   mounted () {},
 

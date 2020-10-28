@@ -1,6 +1,7 @@
 let path = require('path');
 // let miniCssExtractPlugin = require('mini-css-extract-plugin');
 let htmlWebpackPlugin = require('html-webpack-plugin');
+let webpack = require('webpack');
 module.exports = {
     entry:'./src/index.js',
     optimization:{
@@ -55,11 +56,12 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
+                //优先执行该规则
                 enforce: 'pre',
                 use: [
                     {
                         loader: 'eslint-loader',
-                        //优先执行该loader
+                        
                         
                     }
                 ]
